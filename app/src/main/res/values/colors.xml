@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0768B8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF0000</color>
+
+    <color name="joucolor">#D659EC</color>
+    <color name="appparclour">#477D95</color>
+    <color name="youssifcolor">#ff0099cc</color>
+    <color name="anothercolor">#00E2FF</color>
+    <color name="color1">#F085A9</color>
+    <color name="color2">#3481BD</color>
+<!--    <color name="color2">#000000</color>-->
+    <color name="color3">#F36157</color>
+    <color name="color4">#29597E</color>
+    <color name="specialcolour">#222020</color>
+    <color name="whitetransparent">#80ffffff</color>
+    <color name="drwablecolour">#AB8BE4</color>
+
+</resources>

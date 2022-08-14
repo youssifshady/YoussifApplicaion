@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    android:id="@+id/page_of_show_poems" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/white"
+    tools:context=".fragment.PageOfShowPoemsFragment"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/linear_customize_share_size"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="right" android:padding="5dp" android:weightSum="3.5">
+
+                <Button
+
+                    android:id="@+id/back" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:layout_weight="1"
+                    android:background="@drawable/inputsearch"
+                    android:drawableRight="@drawable/exit_icon" android:padding="10dp"
+                    android:text="رجوع" android:textColor="@color/color2"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <TextView android:id="@+id/Poem_titel" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_customize_share_size"
+                android:layout_centerHorizontal="true" android:layout_marginTop="15dp"
+                android:fontFamily="@font/arabicfont3" android:textColor="@android:color/black"
+                android:textIsSelectable="true" android:textSize="25dp" android:textStyle="bold"
+
+            />
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_below="@+id/Poem_titel" android:layout_marginTop="25dp">
+
+
+                <TextView android:id="@+id/poem_body" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:fontFamily="@font/newfont"
+                    android:gravity="center" android:textColor="@android:color/black"
+                    android:textIsSelectable="true" android:textSize="20dp" />
+
+            </ScrollView>
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sharethepoem" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" android:layout_margin="15dp"
+        android:src="@drawable/share_button" app:backgroundTint="@android:color/white"
+        app:maxImageSize="35dp" />
+
+</RelativeLayout>

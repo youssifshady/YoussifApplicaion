@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/whitetransparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    >
+
+    <RelativeLayout
+        android:background="@color/whitetransparent"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageinrecyclerview"
+            android:layout_marginRight="15dp">
+            <TextView
+                android:fontFamily="@font/arabicfont3"
+                android:id="@+id/shapeofiteminreccler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أسم القصيدة"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                />
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/arabicfont3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/numberofpoem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:id="@+id/imageinrecyclerview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/applogo"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+

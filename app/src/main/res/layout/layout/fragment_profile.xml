@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/pen_background"
+    tools:context=".fragment.Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<LinearLayout-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_ofpoet"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/thebest" />
+
+        <TextView
+            android:id="@+id/poetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ofpoet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/Name_of_shady1"
+            android:textColor="@android:color/black"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poetgmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poetname"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/user"
+            android:text="    shadyelzaher@gmail.com    "
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poetnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poetgmail"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/phone_icon_24dp"
+            android:text="    01000670111    "
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/poetintroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poetnumber"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/arabicfont3"
+            android:text="بسم الله الرحمن الرحيم الحمد لله والصلاة والسلام على رسول الله محمد وعلى آله وصحبه و التابعين بإحسان إلي يوم الدين ."
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poet_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poetintroduction"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/arabicfont3"
+            android:text="أما بعد فهذه باقة من أعمالي الشعرية أنهيت بعضها و مازال الكثير في طور التعديل والحذف والإضافة والمراجعة وأشرف بتركه بين أيديكم متمنياً أن ينال إعجابكم ."
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="true"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+    <!--<LinearLayout-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@drawable/background"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="الأسم"-->
+    <!--android:textSize="15dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="15dp"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="تاريخ الميلاد"-->
+    <!--android:textSize="15dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="عدد القصائد"-->
+    <!--android:textSize="15dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:background="@drawable/background4"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_marginRight="18dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="شادي"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textColor="@android:color/holo_blue_dark"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="23dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="1/1/1976"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textColor="@android:color/holo_blue_dark"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:textColor="@android:color/holo_blue_dark"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="220"-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:textSize="15dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<Button-->
+    <!--android:background="@drawable/background3"-->
+    <!--android:textStyle="bold"-->
+    <!--android:id="@+id/goto_ImagesOfPoems"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="إنجازات  و  أوسمة"-->
+    <!--android:textSize="20dp"-->
+    <!--android:textColor="@android:color/black"-->
+
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--&lt;!&ndash;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_gravity="center_horizontal"-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@android:color/holo_blue_bright">-->
+    <!--<LinearLayout-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:paddingRight="30dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@android:color/holo_blue_bright">-->
+    <!--<ImageView-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="130dp"-->
+    <!--android:src="@drawable/user3"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="Youssif Shady"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="25dp"-->
+    <!--/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@drawable/background"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="Photos"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="15dp"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="Followers"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_marginLeft="24dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="Following"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_marginLeft="24dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:paddingLeft="19dp"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginLeft="13dp"-->
+    <!--android:background="@drawable/background4"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="350dp"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="160"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:textColor="@android:color/holo_blue_bright"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="2254"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="@android:color/holo_blue_bright"-->
+
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:textColor="@android:color/holo_blue_bright"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="520"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_marginLeft="58dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/the_email_24dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="youssifshady2004@gmail.com"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/phone_icon_24dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="01121202098"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/ic_group_add_black_24dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Add To Groupe"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/ic_forum_black_24dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Show All Comments"-->
+    <!--android:textSize="20dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:layout_height="50dp">-->
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@drawable/facebook"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@drawable/twiter"-->
+    <!--/>-->
+
+
+    <!--<ImageView-->
+    <!--android:src="@drawable/user2"-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp" />-->
+
+    <!--<TextView-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="الملف الشخصي"-->
+    <!--android:textSize="40dp"-->
+    <!--android:textColor="@android:color/holo_blue_dark"/>&ndash;&gt;-->

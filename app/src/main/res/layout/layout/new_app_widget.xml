@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/inputsearch"
+    android:layout_gravity="center"
+    android:id="@+id/widgetlayout"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/logoofapp"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logoofapp2"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <TextView
+            android:fontFamily="@font/font1"
+            android:textColor="@android:color/white"
+            android:id="@+id/time"
+            android:text=""
+            android:textSize="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:fontFamily="@font/font1"
+            android:id="@+id/date"
+            android:layout_below="@+id/time"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:id="@+id/name_app"
+        android:textSize="30dp"
+        android:text="أشعار شادي الظاهر"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+
+
+    <TextView
+        android:fontFamily="@font/font1"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:id="@+id/time_now"
+        android:textSize="30dp"
+        android:text="الوقت الحالي"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+    <!--        <LinearLayout-->
+    <!--            android:layout_toStartOf="@+id/logoofapp"-->
+    <!--            android:layout_below="@+id/name_app"-->
+    <!--            android:layout_above="@+id/time_now"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content">-->
+
+    <!--            <EditText-->
+    <!--                android:hint="أبحث عن القصيدة... "-->
+    <!--                android:id="@+id/placeofsearchwidget"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/inputsearch"-->
+    <!--                android:layout_margin="20dp"-->
+    <!--                android:drawableLeft="@drawable/icon_ofsearch"-->
+    <!--                android:padding="5dp"-->
+    <!--                />-->
+    <!--            <ListView-->
+    <!--                android:id="@+id/widgetrecycler"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                tools:listitem="@layout/itemofrecyclerview"/>-->
+
+    <!--        </LinearLayout>-->

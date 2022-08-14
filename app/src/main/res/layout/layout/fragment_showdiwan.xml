@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/showdiwan_fragmentid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pen_background"
+    tools:context=".fragment.ShowdiwanFragment">
+
+
+    <ScrollView
+
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearof_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/secounddiwan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputsearch"
+                    android:text="الديوان الثاني"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/firstdiwan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputsearch"
+                    android:fontFamily="@font/arabicfont3"
+                    android:text="الديوان الأول"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/placeofsearchwidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearof_buttons"
+                android:layout_margin="10dp"
+                android:background="@drawable/inputsearch"
+                android:drawableLeft="@drawable/icon_ofsearch"
+                android:hint="أبحث عن أسم القصيدة"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/itemofrecyclerview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/button_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_add_black_24dp"
+                app:backgroundTint="@android:color/white"
+                app:maxImageSize="45dp"
+                tools:ignore="NewApi" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

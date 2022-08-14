@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--tools:showIn="navigation_view"-->
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_page"
+            android:icon="@drawable/menu"
+            android:title="الصفحة الرئيسة" />
+
+        <item
+            android:id="@+id/poems"
+            android:icon="@drawable/poem_icon"
+            android:title="الأشعار" />
+        <item
+            android:id="@+id/sharedtheapp"
+            android:icon="@drawable/share"
+            android:title="مشاركة البرنامج" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_icon"
+            android:title="الإعدادات" />
+
+    <item android:title="معلومات عن الشاعر  و البرنامج"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/angaztandawsema"
+                android:icon="@drawable/award_icon"
+                android:title="الأوسمة" />
+            <item
+                android:id="@+id/abouttheapp"
+                android:icon="@drawable/about_icon"
+                android:title=" حول البرنامج" />
+            <item
+                android:id="@+id/aboutthepoet"
+                android:icon="@drawable/poet_icon2"
+                android:title="حول الشاعر" />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_manage"-->
+                <!--android:icon="@drawable/ic_menu_manage"-->
+                <!--android:title="الأدوات" />-->
+
+        </menu>
+    </item>
+
+
+    <item  android:id="@+id/poet_only"
+        android:title=" خاص بالشاعر"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/signin_ofpoet"
+                android:icon="@drawable/poet_pass_icon"
+                android:title="الشاعر" />
+            <item
+                android:id="@+id/Editable_poems"
+                android:icon="@drawable/poem_icon"
+                android:title="تعديل وتحديث الأشعار" />
+
+
+            <item
+                android:id="@+id/Poet_Password"
+                android:icon="@drawable/passowrd_icon"
+                android:title="كلمة سر الشاعر" />
+
+        </menu>
+    </item>
+</group>
+</menu>
